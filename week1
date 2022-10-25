@@ -1,0 +1,58 @@
+#  Week-1: Integer, Floats and strings
+
+num=0
+while(num!=4):
+    print("\n\nwhich datatype want to given as input :\n 1.float \n 2.int \n 3.string \n 4.exit\n ")
+    num= int(input(" enter option(1/2/3/4): "))
+
+    if (num==1):
+            ques=float(input("enter a float number"))
+            print("conversion of float to integer")
+            print("datatype before conversion: ", type(ques))
+            #float to integer
+            ques=int(ques)
+            print("datatype after conversion: ", type(ques))
+            print("converted answer",ques)
+
+    elif(num==2):
+        ch=int(input("enter choice(1/2)\n 1.convert integer to string\n 2.convert integer to float \n "))
+        ques=int(input("enter an integer"))
+        if(ch==1):
+            print("conversion of integer to float")
+            print("datatype before conversion: ", type(ques))
+            # integer to string
+            ques=str(ques)
+            print("datatype after conversion: ", type(ques))
+            print("converted answer",ques)
+        elif(ch==2):
+            print("conversion of integer to float")
+            print("datatype before conversion: ", type(ques))
+            # integer to float 
+            ques=float(ques)
+            print("datatype after conversion: ", type(ques))
+            print("converted answer",ques)
+    elif(num==3):
+        ch=int(input(" enter choice(1/2)\n 1.convert string to integer\n 2.convert string to float \n "))
+        
+        try: 
+          ques=int(input("enter an string"))
+          if(ch==1):
+              print("conversion of string to integer")
+              print("datatype before conversion: ", type(ques))
+              # string to integer 
+              ques=int(ques)
+              print("datatype after conversion: ", type(ques))
+              print("converted answer",ques)
+          elif(ch==2):
+              print("conversion of string to float")
+              print("datatype before conversion: ", type(ques))
+              # string to float 
+              ques=float(ques)
+              print("datatype after conversion: ", type(ques))
+              print("converted answer",ques)
+        except:
+          print("invalid string,can't able to do conversion.try again!")
+
+
+
+
