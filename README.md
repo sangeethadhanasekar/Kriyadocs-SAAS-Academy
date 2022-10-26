@@ -1,2 +1,2 @@
 # Kriyadocs-SAAS-Academy
-a repo for weekly projects.
+a repo for projects.
